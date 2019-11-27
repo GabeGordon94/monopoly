@@ -319,8 +319,7 @@ Monopoly.isValidInput = function(validate,value){
                 isValid = true;
             }
             //TODO: remove when done
-            console.log("the val " + value)
-            isValid = true;
+            console.log("the val " + value);
             break;
     }
 
