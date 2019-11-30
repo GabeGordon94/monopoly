@@ -59,6 +59,18 @@ body{
     background-image: url(../images/jail.jpg);
 }
 
+.jailed{
+    background-image: url(../images/sadFace.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.happyFace{
+    background-image: url(../images/happyFace.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 
 .board .game.cell.free-parking{
     background-image: url(../images/parking.png);
@@ -198,6 +210,12 @@ body{
 .player#player4 , .player4.cell .content{
     background-color: #d061cd;
 }
+.player#player5 , .player5.cell .content{
+    background-color: red;
+}
+.player#player6 , .player6.cell .content{
+    background-color: yellow;
+}
 
 .player.current-turn{
     background-image:url(../images/crown.png);
@@ -217,8 +235,25 @@ body{
     background-color: black;
     border-radius: 100px;
     opacity:0;
+    background-color: #364c9c;
 }
 
 .dice-dot.right{
     margin-left:36%;
+}
+
+.removed{
+    display:none;
+}
+
+#moneyBoard{
+    position: absolute;
+    left:3%;
+    background:white;
+}
+
+@media screen and (max-width:850px){
+    #moneyBoard{
+        display:none;
+    }
 }
